@@ -8,7 +8,7 @@
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	MGraph g;
+    MGraph g;
     g=create_graph();
     printf("\nDFS: ");
     depth_first_search(g);       /* recursion */
