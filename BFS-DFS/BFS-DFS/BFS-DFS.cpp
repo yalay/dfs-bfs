@@ -19,11 +19,11 @@ int _tmain(int argc, _TCHAR* argv[])
 
     // 深度优先搜索的栈方式非递归方式遍历
     printf("\nDFS: ");
-    depth_first_search_by_stack(g);
+    depth_first_search_by_stack(graph);
 
     // 广度优先搜索的队列非递归方式遍历
     printf("\nBFS: ");
-    breadth_first_search_by_queue(g);
+    breadth_first_search_by_queue(graph);
     printf("\n");
 
     // 调试暂停
