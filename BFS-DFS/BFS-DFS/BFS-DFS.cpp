@@ -8,16 +8,25 @@
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-    MGraph g;
-    g=create_graph();
+    MGraph graph;
+
+    // 创建无向权重图
+    graph = create_graph();
+
+    // 深度优先搜索的递归方式遍历
     printf("\nDFS: ");
-    depth_first_search(g);       /* recursion */
+    depth_first_search(graph);
+
+    // 深度优先搜索的栈方式非递归方式遍历
     printf("\nDFS: ");
-    depth_first_search_by_stack(g);      /* non recursion */
+    depth_first_search_by_stack(g);
+
+    // 广度优先搜索的队列非递归方式遍历
     printf("\nBFS: ");
     breadth_first_search_by_queue(g);
     printf("\n");
 
+    // 调试暂停
     getchar();
     return 0;
 }
